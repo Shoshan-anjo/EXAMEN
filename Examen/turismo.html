@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Captura</title>
+    <link rel="stylesheet" href="diseñoturismo.css">
+</head>
+<body>
+
+<header>
+    <!-- Encabezado existente aquí -->
+</header>
+
+<main>
+    <section class="container">
+        <h2>Formulario de Captura de Información</h2>
+        <form id="customerForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Fecha de Nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <div class="error" id="birthdateError"></div>
+            </div>
+            <div class="form-group">
+                <label for="country">País:</label>
+                <select id="country" name="country" required>
+                    <option value="">Seleccione su país</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Brasil">Brasil</option>
+                </select>
+                <div class="error" id="countryError"></div>
+            </div>
+            <div class="form-group">
+                <label for="interest">Intereses:</label>
+                <select id="interest" name="interest" required>
+                    <option value="">Seleccione su interés</option>
+                    <option value="Deportes">Deportes</option>
+                    <option value="Música">Música</option>
+                    <option value="Lectura">Lectura</option>
+                    <option value="Viajes">Viajes</option>
+                </select>
+                <div class="error" id="interestError"></div>
+            </div>
+            <div class="form-group">
+                <label for="gender">Género:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Seleccione su género</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <div class="error" id="genderError"></div>
+            </div>
+            <div class="form-group">
+                <label for="idCard">Suba su CI escaneado:</label>
+                <input type="file" id="idCard" name="idCard" accept="image/*" required>
+                <div class="error" id="idCardError"></div>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <!-- Pie de página existente aquí -->
+</footer>
+
+<script src="turismojs.js"></script>
+
+</body>
+</html>
